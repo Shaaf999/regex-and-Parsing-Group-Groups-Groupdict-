@@ -2,7 +2,11 @@ import re
 s=input()
 p=r'([a-z A-Z 0-9])\1'    # to print first occurance of repeating character \1  # code in list alpha numeric
 G=re.search(p,s) # re.search(package, string)
+
+#another way to write G----->>>=re.search(r'([a-z A-Z 0-9]),input())
+
 if G:
     print(G.group()[0])
 else:
     print(-1)
+    
